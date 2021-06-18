@@ -17,7 +17,7 @@ class LoginPage extends StatelessWidget {
             SizedBox(
               width: 128,
               height: 128,
-              child: Image.asset("assets/images/logo_livros.jpg"),
+              child: Image.asset("assets/images/login.png"),
             ),
             SizedBox(
               height: 10,
@@ -73,8 +73,8 @@ class LoginPage extends StatelessWidget {
                   end: Alignment.bottomRight,
                   stops: [0.3, 1],
                   colors: [
-                    Color(0xFF90EE90),
-                    Color(0xFF32CD32),
+                    Colors.red.shade300,
+                    Colors.red.shade500,
                   ],
                 ),
                 borderRadius: BorderRadius.all(
@@ -97,10 +97,8 @@ class LoginPage extends StatelessWidget {
                       Container(
                         child: SizedBox(
                           child: Image.asset("assets/images/user.png"),
-                          
                           height: 28,
                           width: 28,
-                          
                         ),
                       )
                     ],
@@ -122,7 +120,7 @@ class LoginPage extends StatelessWidget {
               height: 60,
               alignment: Alignment.centerLeft,
               decoration: BoxDecoration(
-                color: Color(0xFFFFA07A),
+                color: Colors.brown.shade200,
                 borderRadius: BorderRadius.all(
                   Radius.circular(5),
                 ),
@@ -135,7 +133,6 @@ class LoginPage extends StatelessWidget {
                       Text(
                         "Login com Gmail",
                         style: TextStyle(
-
                           color: Colors.black54,
                           fontSize: 18,
                         ),
@@ -164,11 +161,13 @@ class LoginPage extends StatelessWidget {
                   "Cadastre-se",
                   textAlign: TextAlign.center,
                 ),
-              onPressed: () {
-              print('Pressed');
-              Navigator.push(context,
-                  MaterialPageRoute(builder: (BuildContext) => SignupPage()));
-            },
+                onPressed: () {
+                  print('Pressed');
+                  Navigator.push(
+                      context,
+                      MaterialPageRoute(
+                          builder: (BuildContext) => SignupPage()));
+                },
               ),
             )
           ],
@@ -183,7 +182,7 @@ class SignupPage extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        backgroundColor: Colors.green,
+        backgroundColor: Colors.red.shade900,
         elevation: 0,
       ),
       body: SingleChildScrollView(
@@ -230,7 +229,7 @@ class SignupPage extends StatelessWidget {
                         decoration: InputDecoration(
                           labelText: "Nome:",
                           labelStyle: TextStyle(
-                            color: Colors.green,
+                            color: Colors.red.shade900,
                             fontWeight: FontWeight.w400,
                             fontSize: 16,
                           ),
@@ -249,7 +248,7 @@ class SignupPage extends StatelessWidget {
                         decoration: InputDecoration(
                           labelText: "Email:",
                           labelStyle: TextStyle(
-                            color: Colors.green,
+                            color: Colors.red.shade900,
                             fontWeight: FontWeight.w400,
                             fontSize: 16,
                           ),
@@ -269,14 +268,14 @@ class SignupPage extends StatelessWidget {
                         decoration: InputDecoration(
                           labelText: "Password:",
                           labelStyle: TextStyle(
-                            color: Colors.green,
+                            color: Colors.red.shade900,
                             fontWeight: FontWeight.w400,
                             fontSize: 16,
                           ),
                         ),
                         style: TextStyle(
                           fontSize: 20,
-                          color: Colors.green,
+                          color: Colors.red.shade900,
                         ),
                       ),
                       SizedBox(
@@ -285,7 +284,7 @@ class SignupPage extends StatelessWidget {
                       Container(
                         width: double.infinity,
                         decoration: BoxDecoration(
-                          color: Colors.green,
+                          color: Colors.red.shade900,
                           borderRadius: BorderRadius.all(
                             Radius.circular(5),
                           ),

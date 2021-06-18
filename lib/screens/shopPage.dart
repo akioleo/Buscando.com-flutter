@@ -11,7 +11,8 @@ class ShopPage extends StatelessWidget {
             height: MediaQuery.of(context).size.height * .6,
             decoration: BoxDecoration(
                 image: DecorationImage(
-                    image: AssetImage("assets/images/product2.jpg"), fit: BoxFit.cover)),
+                    image: AssetImage("assets/images/product2.jpg"),
+                    fit: BoxFit.cover)),
           ),
           Positioned(
             left: 30,
@@ -208,8 +209,10 @@ class ShopPage extends StatelessWidget {
                           borderRadius: BorderRadius.circular(10),
                           child: InkWell(
                             onTap: () {
-                            Navigator.push(context,
-                          MaterialPageRoute(builder: (BuildContext) => CardsPage()));
+                              Navigator.push(
+                                  context,
+                                  MaterialPageRoute(
+                                      builder: (BuildContext) => CardsPage()));
                             },
                             borderRadius: BorderRadius.circular(10),
                             child: Container(
@@ -241,8 +244,6 @@ class ShopPage extends StatelessWidget {
   }
 }
 
-
-
 class CardsPage extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
@@ -250,54 +251,49 @@ class CardsPage extends StatelessWidget {
       body: Column(
         mainAxisAlignment: MainAxisAlignment.spaceBetween,
         children: <Widget>[
-          Expanded(      
+          Expanded(
             child: Container(
-              child: productList(context),             
+              child: productList(context),
             ),
           ),
           Container(
-            height:40,
-            width: double.infinity,
-             child: ElevatedButton.icon(
-              style: ElevatedButton.styleFrom(
-              primary: Colors.green,  
-            ),
-            label: Text('Voltar', style: new TextStyle(
-              fontSize: 18
-            ),),
-            icon: Icon(
-              Icons.navigate_before_rounded,
-              size: 40.0,
-            ),
-            onPressed: () {
-              print('Pressed');
-              Navigator.push(context,
-                  MaterialPageRoute(builder: (BuildContext) => ShopPage()));
-            },
-          )
-          ),
-
+              height: 40,
+              width: double.infinity,
+              child: ElevatedButton.icon(
+                style: ElevatedButton.styleFrom(
+                  primary: Colors.green,
+                ),
+                label: Text(
+                  'Voltar',
+                  style: new TextStyle(fontSize: 18),
+                ),
+                icon: Icon(
+                  Icons.navigate_before_rounded,
+                  size: 40.0,
+                ),
+                onPressed: () {
+                  print('Pressed');
+                  Navigator.push(context,
+                      MaterialPageRoute(builder: (BuildContext) => ShopPage()));
+                },
+              )),
           Container(
             color: Colors.black12,
             height: 80,
             child: Row(
               mainAxisAlignment: MainAxisAlignment.spaceBetween,
               children: <Widget>[
-                
                 Padding(
                   padding: EdgeInsets.only(
                     left: 20,
                     top: 20,
                   ),
-                  
                   child: Column(
                     crossAxisAlignment: CrossAxisAlignment.start,
                     children: <Widget>[
                       Text(
                         "TOTAL",
-                        style: new TextStyle(
-                          fontWeight: FontWeight.bold
-                        ),
+                        style: new TextStyle(fontWeight: FontWeight.bold),
                       ),
                       SizedBox(
                         height: 5,
@@ -434,7 +430,6 @@ Widget productItem1(context) {
   );
 }
 
-
 Widget productItem2(context) {
   return Container(
     height: 120,
@@ -511,7 +506,6 @@ Widget productItem2(context) {
   );
 }
 
-
 Widget productItem3(context) {
   return Container(
     height: 120,
@@ -587,4 +581,3 @@ Widget productItem3(context) {
     ),
   );
 }
-

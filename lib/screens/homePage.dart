@@ -26,9 +26,9 @@ class _HomePage extends State<HomePage> {
                       begin: Alignment.bottomLeft,
                       end: Alignment.topRight,
                       colors: [
-                        Color(0xFF006400),
-                        Color(0xFF008000),
-                        Color(0xFF32CD32),
+                        Colors.red.shade900,
+                        Colors.red.shade700,
+                        Colors.red.shade400,
                       ]),
                 ),
                 child: Column(
@@ -44,7 +44,7 @@ class _HomePage extends State<HomePage> {
                           color: Colors.white,
                         ),
                         Text(
-                          "Biblioteca",
+                          "Menu",
                           style: TextStyle(
                             color: Colors.white,
                             fontSize: 30,
@@ -62,7 +62,7 @@ class _HomePage extends State<HomePage> {
                           horizontal: 10.0, vertical: 20.0),
                       margin: EdgeInsets.symmetric(
                           vertical: 15.0, horizontal: 20.0),
-                      height: 190,
+                      height: 210,
                       decoration: BoxDecoration(
                         color: Colors.white,
                         borderRadius: BorderRadius.circular(15.0),
@@ -87,7 +87,7 @@ class _HomePage extends State<HomePage> {
                                 ),
                               ),
                               Text(
-                                "Separamos estes livros",
+                                "Separamos estas vagas",
                                 style: TextStyle(
                                   color: Colors.black,
                                   fontSize: 15,
@@ -104,9 +104,10 @@ class _HomePage extends State<HomePage> {
                             ],
                           ),
                           Image.asset(
-                            "assets/images/livros_pilha.png",
+                            "assets/images/prancheta.jpg",
                             fit: BoxFit.fitWidth,
-                            width: 159,
+                            width: 150,
+                            height: 200,
                           ),
                         ],
                       ),
@@ -134,22 +135,22 @@ class _HomePage extends State<HomePage> {
                   ),
                   SizedBox(height: 10),
                   BookCard(
-                    title: "Harry Potter",
-                    subtitle: "Parte 1",
-                    rating: 4,
-                    imgUrl: "assets/images/hp1.png",
-                  ),
-                  BookCard(
-                    title: "Harry Potter",
-                    subtitle: "Parte 2",
-                    rating: 3,
-                    imgUrl: "assets/images/hp2.png",
-                  ),
-                  BookCard(
-                    title: "Harry Potter",
-                    subtitle: "Parte 3",
+                    title: "Developer",
+                    subtitle: "IBM",
                     rating: 5,
-                    imgUrl: "assets/images/hp3.png",
+                    imgUrl: "assets/images/ibm.png",
+                  ),
+                  BookCard(
+                    title: "Analyst",
+                    subtitle: "Oracle",
+                    rating: 4,
+                    imgUrl: "assets/images/oracle.png",
+                  ),
+                  BookCard(
+                    title: "Support",
+                    subtitle: "Google",
+                    rating: 4,
+                    imgUrl: "assets/images/google.png",
                   ),
                 ],
               ),
