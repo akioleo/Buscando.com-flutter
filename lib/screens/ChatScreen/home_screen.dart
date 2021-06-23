@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
-import 'package:projeto_blog/screens/chat_screen.dart';
-import 'package:projeto_blog/screens/message_model.dart';
+import 'package:projeto_blog/screens/ChatScreen/chat_screen.dart';
+import 'package:projeto_blog/screens/ChatScreen/message_model.dart';
 
 class HomeScreen extends StatelessWidget {
   @override

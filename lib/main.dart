@@ -1,9 +1,11 @@
 import 'package:flutter/material.dart';
-import 'package:projeto_blog/screens/blogPage.dart';
-import 'package:projeto_blog/screens/homePage.dart';
-import 'package:projeto_blog/screens/home_screen.dart';
+import 'package:projeto_blog/screens/Blog/blogPage.dart';
+import 'package:projeto_blog/screens/HomePage/homePage.dart';
+import 'package:projeto_blog/screens/ChatScreen/home_screen.dart';
 import 'package:projeto_blog/screens/loginPage.dart';
-import 'package:projeto_blog/screens/shopPage.dart';
+import 'package:projeto_blog/screens/routes.dart';
+
+import 'screens/Auth.dart';
 
 void main() {
   runApp(MyApp());
@@ -13,7 +15,12 @@ class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
-      home: LoginPage(),
+      routes: {
+        AppRoutes.LOGIN: (ctx) => LoginPage(),
+        AppRoutes.HOME: (ctx) => HomePage(),
+        AppRoutes.BLOG: (ctx) => BlogPage(),
+        AppRoutes.CHAT: (ctx) => HomeScreen(),
+      },
       debugShowCheckedModeBanner: false,
       theme: ThemeData(
         primaryColor: Colors.red.shade900,

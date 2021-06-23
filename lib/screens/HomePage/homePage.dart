@@ -1,7 +1,10 @@
+import 'dart:async';
+
 import 'package:flutter/material.dart';
+import 'package:flutter/services.dart';
 import 'package:projeto_blog/main.dart';
 import 'package:projeto_blog/screens/MyClipper.dart';
-import 'package:projeto_blog/screens/ReadBook.dart';
+import 'package:projeto_blog/screens/HomePage/ReadBook.dart';
 
 class HomePage extends StatefulWidget {
   @override
@@ -9,7 +12,7 @@ class HomePage extends StatefulWidget {
 }
 
 class _HomePage extends State<HomePage> {
-  @override
+@override
   Widget build(BuildContext context) {
     return Scaffold(
       body: SingleChildScrollView(

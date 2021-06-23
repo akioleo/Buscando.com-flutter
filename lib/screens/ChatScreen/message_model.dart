@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:projeto_blog/screens/user_model.dart';
+import 'package:projeto_blog/screens/ChatScreen/user_model.dart';
 
 class Message {
   final User sender;

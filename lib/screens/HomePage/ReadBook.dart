@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:projeto_blog/main.dart';
 import 'package:projeto_blog/screens/MyClipper.dart';
-import 'package:projeto_blog/screens/homePage.dart';
+import 'package:projeto_blog/screens/HomePage/homePage.dart';
 
 class ReadBook extends StatefulWidget {
   @override
